@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F1FB01E31993FFF8309FD92 /* Pods_CodeSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F824A9AEFDAEBFACCF688B5 /* Pods_CodeSample.framework */; };
 		7BE7A9B7207EEF3200B41014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9B6207EEF3200B41014 /* AppDelegate.swift */; };
 		7BE7A9B9207EEF3200B41014 /* ProfileMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9B8207EEF3200B41014 /* ProfileMatchesViewController.swift */; };
 		7BE7A9BC207EEF3200B41014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE7A9BA207EEF3200B41014 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 		7BE7A9D7207FA56900B41014 /* OkCupidAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9D6207FA56900B41014 /* OkCupidAPIClient.swift */; };
 		7BE7A9D9207FA59000B41014 /* OkCupidAPIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9D8207FA59000B41014 /* OkCupidAPIClientError.swift */; };
 		7BE7A9DB207FA5B900B41014 /* OkCupidAPIClientResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9DA207FA5B900B41014 /* OkCupidAPIClientResponse.swift */; };
+		7BE7A9DD207FBDE600B41014 /* MatchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9DC207FBDE600B41014 /* MatchResults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07C22CA6A9AD322A3ED855F3 /* Pods-CodeSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeSample/Pods-CodeSample.release.xcconfig"; sourceTree = "<group>"; };
+		1CD54F37D170F6D52FD5BE05 /* Pods-CodeSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeSampleTests/Pods-CodeSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		388DFF89B334CB676EB16E8C /* Pods_CodeSample_CodeSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeSample_CodeSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F824A9AEFDAEBFACCF688B5 /* Pods_CodeSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC2179F79EE9FEE57D83704 /* Pods_CodeSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5976F21E772BE28B3929CFBB /* Pods-CodeSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeSample/Pods-CodeSample.debug.xcconfig"; sourceTree = "<group>"; };
 		7BE7A9B3207EEF3200B41014 /* CodeSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE7A9B6207EEF3200B41014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BE7A9B8207EEF3200B41014 /* ProfileMatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMatchesViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +50,8 @@
 		7BE7A9D6207FA56900B41014 /* OkCupidAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkCupidAPIClient.swift; sourceTree = "<group>"; };
 		7BE7A9D8207FA59000B41014 /* OkCupidAPIClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkCupidAPIClientError.swift; sourceTree = "<group>"; };
 		7BE7A9DA207FA5B900B41014 /* OkCupidAPIClientResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkCupidAPIClientResponse.swift; sourceTree = "<group>"; };
+		7BE7A9DC207FBDE600B41014 /* MatchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchResults.swift; sourceTree = "<group>"; };
+		D59060E265B9063308FBFB8F /* Pods-CodeSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeSampleTests/Pods-CodeSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1FB01E31993FFF8309FD92 /* Pods_CodeSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +73,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CF6EE7CF28B8FC138C72024 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CD54F37D170F6D52FD5BE05 /* Pods-CodeSampleTests.debug.xcconfig */,
+				D59060E265B9063308FBFB8F /* Pods-CodeSampleTests.release.xcconfig */,
+				5976F21E772BE28B3929CFBB /* Pods-CodeSample.debug.xcconfig */,
+				07C22CA6A9AD322A3ED855F3 /* Pods-CodeSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7BE7A9AA207EEF3200B41014 = {
 			isa = PBXGroup;
 			children = (
 				7BE7A9B5207EEF3200B41014 /* CodeSample */,
 				7BE7A9CA207EEF3400B41014 /* CodeSampleTests */,
 				7BE7A9B4207EEF3200B41014 /* Products */,
+				3CF6EE7CF28B8FC138C72024 /* Pods */,
+				A91EA49CB56EBFAE422E54FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +109,7 @@
 			children = (
 				7BE7A9B6207EEF3200B41014 /* AppDelegate.swift */,
 				7BE7A9B8207EEF3200B41014 /* ProfileMatchesViewController.swift */,
+				7BE7A9DC207FBDE600B41014 /* MatchResults.swift */,
 				7BE7A9D6207FA56900B41014 /* OkCupidAPIClient.swift */,
 				7BE7A9D8207FA59000B41014 /* OkCupidAPIClientError.swift */,
 				7BE7A9DA207FA5B900B41014 /* OkCupidAPIClientResponse.swift */,
@@ -105,6 +130,16 @@
 			path = CodeSampleTests;
 			sourceTree = "<group>";
 		};
+		A91EA49CB56EBFAE422E54FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CC2179F79EE9FEE57D83704 /* Pods_CodeSampleTests.framework */,
+				3F824A9AEFDAEBFACCF688B5 /* Pods_CodeSample.framework */,
+				388DFF89B334CB676EB16E8C /* Pods_CodeSample_CodeSampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +147,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BE7A9D0207EEF3400B41014 /* Build configuration list for PBXNativeTarget "CodeSample" */;
 			buildPhases = (
+				C9F0F2B5BCBC0B312EFA2900 /* [CP] Check Pods Manifest.lock */,
 				7BE7A9AF207EEF3200B41014 /* Sources */,
 				7BE7A9B0207EEF3200B41014 /* Frameworks */,
 				7BE7A9B1207EEF3200B41014 /* Resources */,
+				9D920B885CF6BEE266A7CC37 /* [CP] Embed Pods Frameworks */,
+				C28FB5B065D83DAC52E68A56 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,6 +239,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9D920B885CF6BEE266A7CC37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CodeSample/Pods-CodeSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeSample/Pods-CodeSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C28FB5B065D83DAC52E68A56 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeSample/Pods-CodeSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9F0F2B5BCBC0B312EFA2900 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodeSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7BE7A9AF207EEF3200B41014 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -210,6 +304,7 @@
 				7BE7A9B9207EEF3200B41014 /* ProfileMatchesViewController.swift in Sources */,
 				7BE7A9B7207EEF3200B41014 /* AppDelegate.swift in Sources */,
 				7BE7A9D7207FA56900B41014 /* OkCupidAPIClient.swift in Sources */,
+				7BE7A9DD207FBDE600B41014 /* MatchResults.swift in Sources */,
 				7BE7A9DB207FA5B900B41014 /* OkCupidAPIClientResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,15 +463,13 @@
 		};
 		7BE7A9D1207EEF3400B41014 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5976F21E772BE28B3929CFBB /* Pods-CodeSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8H8DPD5V9F;
 				INFOPLIST_FILE = CodeSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sejanmiah.CodeSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -386,15 +479,13 @@
 		};
 		7BE7A9D2207EEF3400B41014 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07C22CA6A9AD322A3ED855F3 /* Pods-CodeSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8H8DPD5V9F;
 				INFOPLIST_FILE = CodeSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sejanmiah.CodeSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -409,11 +500,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CodeSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sejanmiah.CodeSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -429,11 +516,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CodeSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sejanmiah.CodeSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
