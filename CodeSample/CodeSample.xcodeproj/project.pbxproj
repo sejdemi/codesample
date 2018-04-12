@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7BE7A9B7207EEF3200B41014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9B6207EEF3200B41014 /* AppDelegate.swift */; };
-		7BE7A9B9207EEF3200B41014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9B8207EEF3200B41014 /* ViewController.swift */; };
+		7BE7A9B9207EEF3200B41014 /* ProfileMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9B8207EEF3200B41014 /* ProfileMatchesViewController.swift */; };
 		7BE7A9BC207EEF3200B41014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE7A9BA207EEF3200B41014 /* Main.storyboard */; };
 		7BE7A9BE207EEF3400B41014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BE7A9BD207EEF3400B41014 /* Assets.xcassets */; };
 		7BE7A9C1207EEF3400B41014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE7A9BF207EEF3400B41014 /* LaunchScreen.storyboard */; };
 		7BE7A9CC207EEF3400B41014 /* CodeSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9CB207EEF3400B41014 /* CodeSampleTests.swift */; };
+		7BE7A9D7207FA56900B41014 /* OkCupidAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9D6207FA56900B41014 /* OkCupidAPIClient.swift */; };
+		7BE7A9D9207FA59000B41014 /* OkCupidAPIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9D8207FA59000B41014 /* OkCupidAPIClientError.swift */; };
+		7BE7A9DB207FA5B900B41014 /* OkCupidAPIClientResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9DA207FA5B900B41014 /* OkCupidAPIClientResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +31,7 @@
 /* Begin PBXFileReference section */
 		7BE7A9B3207EEF3200B41014 /* CodeSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE7A9B6207EEF3200B41014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BE7A9B8207EEF3200B41014 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7BE7A9B8207EEF3200B41014 /* ProfileMatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMatchesViewController.swift; sourceTree = "<group>"; };
 		7BE7A9BB207EEF3200B41014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BE7A9BD207EEF3400B41014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BE7A9C0207EEF3400B41014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +39,9 @@
 		7BE7A9C7207EEF3400B41014 /* CodeSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE7A9CB207EEF3400B41014 /* CodeSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSampleTests.swift; sourceTree = "<group>"; };
 		7BE7A9CD207EEF3400B41014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BE7A9D6207FA56900B41014 /* OkCupidAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkCupidAPIClient.swift; sourceTree = "<group>"; };
+		7BE7A9D8207FA59000B41014 /* OkCupidAPIClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkCupidAPIClientError.swift; sourceTree = "<group>"; };
+		7BE7A9DA207FA5B900B41014 /* OkCupidAPIClientResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkCupidAPIClientResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				7BE7A9B6207EEF3200B41014 /* AppDelegate.swift */,
-				7BE7A9B8207EEF3200B41014 /* ViewController.swift */,
+				7BE7A9B8207EEF3200B41014 /* ProfileMatchesViewController.swift */,
+				7BE7A9D6207FA56900B41014 /* OkCupidAPIClient.swift */,
+				7BE7A9D8207FA59000B41014 /* OkCupidAPIClientError.swift */,
+				7BE7A9DA207FA5B900B41014 /* OkCupidAPIClientResponse.swift */,
 				7BE7A9BA207EEF3200B41014 /* Main.storyboard */,
 				7BE7A9BD207EEF3400B41014 /* Assets.xcassets */,
 				7BE7A9BF207EEF3400B41014 /* LaunchScreen.storyboard */,
@@ -197,8 +206,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BE7A9B9207EEF3200B41014 /* ViewController.swift in Sources */,
+				7BE7A9D9207FA59000B41014 /* OkCupidAPIClientError.swift in Sources */,
+				7BE7A9B9207EEF3200B41014 /* ProfileMatchesViewController.swift in Sources */,
 				7BE7A9B7207EEF3200B41014 /* AppDelegate.swift in Sources */,
+				7BE7A9D7207FA56900B41014 /* OkCupidAPIClient.swift in Sources */,
+				7BE7A9DB207FA5B900B41014 /* OkCupidAPIClientResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

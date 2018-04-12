@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Profile Matches View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CodeSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ProfileMatchesViewController" customModule="CodeSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,7 +34,18 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="179" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LZX-0m-295">
+                                                    <rect key="frame" x="0.0" y="0.0" width="179" height="214"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="LZX-0m-295" firstAttribute="leading" secondItem="hxf-gv-CTQ" secondAttribute="leading" id="9Y7-1E-0Sc"/>
+                                            <constraint firstAttribute="trailing" secondItem="LZX-0m-295" secondAttribute="trailing" id="OjQ-Pc-SiI"/>
+                                            <constraint firstItem="LZX-0m-295" firstAttribute="top" secondItem="hxf-gv-CTQ" secondAttribute="top" id="oPn-5c-CIn"/>
+                                            <constraint firstAttribute="bottom" secondItem="LZX-0m-295" secondAttribute="bottom" constant="86" id="rvg-62-GIb"/>
+                                        </constraints>
                                         <size key="customSize" width="179" height="300"/>
                                     </collectionViewCell>
                                 </cells>
@@ -49,6 +60,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="profileCollectionView" destination="rXU-iv-hdm" id="Ske-ev-brh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

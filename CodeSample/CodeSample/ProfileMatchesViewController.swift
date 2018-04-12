@@ -1,7 +1,12 @@
 import UIKit
 
-class ViewController: UIViewController {
-
+class ProfileMatchesViewController: UIViewController {
+  
+  
+  @IBOutlet weak var profileCollectionView: UICollectionView!
+  
+  var profileMatches = [String: Any]()
+  
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -13,6 +18,19 @@ class ViewController: UIViewController {
 
 }
 
+// MARK: - UICollectionViewDataSource
+
+//extension ProfileMatchesViewController: UICollectionViewDataSource {
+//
+//
+//}
+//
+//// MARK: - UICollectionViewDelegate
+//
+//extension ProfileMatchesViewController: UICollectionViewDelegate {
+//
+//
+//}
 
 //// MARK: - UITableViewDataSource
 //extension MyViewController: UITableViewDataSource {
