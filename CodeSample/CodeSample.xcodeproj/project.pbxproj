@@ -84,6 +84,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7BD195CE208014600034BBF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7BE7A9DC207FBDE600B41014 /* MatchedUserProfile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7BE7A9AA207EEF3200B41014 = {
 			isa = PBXGroup;
 			children = (
@@ -107,9 +115,9 @@
 		7BE7A9B5207EEF3200B41014 /* CodeSample */ = {
 			isa = PBXGroup;
 			children = (
+				7BD195CE208014600034BBF7 /* Model */,
 				7BE7A9B6207EEF3200B41014 /* AppDelegate.swift */,
 				7BE7A9B8207EEF3200B41014 /* ProfileMatchesViewController.swift */,
-				7BE7A9DC207FBDE600B41014 /* MatchedUserProfile.swift */,
 				7BE7A9D6207FA56900B41014 /* OkCupidAPIClient.swift */,
 				7BE7A9D8207FA59000B41014 /* OkCupidAPIClientError.swift */,
 				7BE7A9DA207FA5B900B41014 /* OkCupidAPIClientResponse.swift */,

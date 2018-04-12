@@ -5,20 +5,15 @@ class ProfileMatchesViewController: UIViewController {
   
   @IBOutlet weak var profileCollectionView: UICollectionView!
   
-  var profileMatches = [String: Any]()
+  var profileMatches: [MatchedUserProfile] = []
   
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-      OkCupidAPIClient.getProfileMatches { (response) in
+      //capture list is unowned because these values will never become nil
+      OkCupidAPIClient.getProfileMatches { [unowned self] (clientResponse, matchedUserProfiles) in
+        self.profileMatches = matchedUserProfiles
       }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
-
 }
 
 // MARK: - UICollectionViewDataSource
