@@ -9,6 +9,9 @@ class ProfileMatchesViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      OkCupidAPIClient.getProfileMatches { (response) in
+      }
     }
 
     override func didReceiveMemoryWarning() {

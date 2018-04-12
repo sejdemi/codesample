@@ -17,7 +17,7 @@
 		7BE7A9D7207FA56900B41014 /* OkCupidAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9D6207FA56900B41014 /* OkCupidAPIClient.swift */; };
 		7BE7A9D9207FA59000B41014 /* OkCupidAPIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9D8207FA59000B41014 /* OkCupidAPIClientError.swift */; };
 		7BE7A9DB207FA5B900B41014 /* OkCupidAPIClientResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9DA207FA5B900B41014 /* OkCupidAPIClientResponse.swift */; };
-		7BE7A9DD207FBDE600B41014 /* MatchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9DC207FBDE600B41014 /* MatchResults.swift */; };
+		7BE7A9DD207FBDE600B41014 /* MatchedUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9DC207FBDE600B41014 /* MatchedUserProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		7BE7A9D6207FA56900B41014 /* OkCupidAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkCupidAPIClient.swift; sourceTree = "<group>"; };
 		7BE7A9D8207FA59000B41014 /* OkCupidAPIClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkCupidAPIClientError.swift; sourceTree = "<group>"; };
 		7BE7A9DA207FA5B900B41014 /* OkCupidAPIClientResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkCupidAPIClientResponse.swift; sourceTree = "<group>"; };
-		7BE7A9DC207FBDE600B41014 /* MatchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchResults.swift; sourceTree = "<group>"; };
+		7BE7A9DC207FBDE600B41014 /* MatchedUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedUserProfile.swift; sourceTree = "<group>"; };
 		D59060E265B9063308FBFB8F /* Pods-CodeSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeSampleTests/Pods-CodeSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,7 +109,7 @@
 			children = (
 				7BE7A9B6207EEF3200B41014 /* AppDelegate.swift */,
 				7BE7A9B8207EEF3200B41014 /* ProfileMatchesViewController.swift */,
-				7BE7A9DC207FBDE600B41014 /* MatchResults.swift */,
+				7BE7A9DC207FBDE600B41014 /* MatchedUserProfile.swift */,
 				7BE7A9D6207FA56900B41014 /* OkCupidAPIClient.swift */,
 				7BE7A9D8207FA59000B41014 /* OkCupidAPIClientError.swift */,
 				7BE7A9DA207FA5B900B41014 /* OkCupidAPIClientResponse.swift */,
@@ -304,7 +304,7 @@
 				7BE7A9B9207EEF3200B41014 /* ProfileMatchesViewController.swift in Sources */,
 				7BE7A9B7207EEF3200B41014 /* AppDelegate.swift in Sources */,
 				7BE7A9D7207FA56900B41014 /* OkCupidAPIClient.swift in Sources */,
-				7BE7A9DD207FBDE600B41014 /* MatchResults.swift in Sources */,
+				7BE7A9DD207FBDE600B41014 /* MatchedUserProfile.swift in Sources */,
 				7BE7A9DB207FA5B900B41014 /* OkCupidAPIClientResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,7 +469,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8H8DPD5V9F;
 				INFOPLIST_FILE = CodeSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sejanmiah.CodeSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -485,7 +488,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8H8DPD5V9F;
 				INFOPLIST_FILE = CodeSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sejanmiah.CodeSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -500,7 +506,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CodeSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sejanmiah.CodeSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -516,7 +526,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CodeSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sejanmiah.CodeSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
