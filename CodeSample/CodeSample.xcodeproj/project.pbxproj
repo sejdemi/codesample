@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1F1FB01E31993FFF8309FD92 /* Pods_CodeSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F824A9AEFDAEBFACCF688B5 /* Pods_CodeSample.framework */; };
+		7BD195D320801F640034BBF7 /* UserProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD195D220801F640034BBF7 /* UserProfileCollectionViewCell.swift */; };
 		7BE7A9B7207EEF3200B41014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9B6207EEF3200B41014 /* AppDelegate.swift */; };
-		7BE7A9B9207EEF3200B41014 /* ProfileMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9B8207EEF3200B41014 /* ProfileMatchesViewController.swift */; };
+		7BE7A9B9207EEF3200B41014 /* MatchedProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9B8207EEF3200B41014 /* MatchedProfilesViewController.swift */; };
 		7BE7A9BC207EEF3200B41014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE7A9BA207EEF3200B41014 /* Main.storyboard */; };
 		7BE7A9BE207EEF3400B41014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BE7A9BD207EEF3400B41014 /* Assets.xcassets */; };
 		7BE7A9C1207EEF3400B41014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE7A9BF207EEF3400B41014 /* LaunchScreen.storyboard */; };
@@ -37,9 +38,10 @@
 		3F824A9AEFDAEBFACCF688B5 /* Pods_CodeSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC2179F79EE9FEE57D83704 /* Pods_CodeSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5976F21E772BE28B3929CFBB /* Pods-CodeSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeSample/Pods-CodeSample.debug.xcconfig"; sourceTree = "<group>"; };
+		7BD195D220801F640034BBF7 /* UserProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		7BE7A9B3207EEF3200B41014 /* CodeSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE7A9B6207EEF3200B41014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BE7A9B8207EEF3200B41014 /* ProfileMatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMatchesViewController.swift; sourceTree = "<group>"; };
+		7BE7A9B8207EEF3200B41014 /* MatchedProfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedProfilesViewController.swift; sourceTree = "<group>"; };
 		7BE7A9BB207EEF3200B41014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BE7A9BD207EEF3400B41014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BE7A9C0207EEF3400B41014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -92,6 +94,30 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		7BD195CF20801C3A0034BBF7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BE7A9B8207EEF3200B41014 /* MatchedProfilesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7BD195D020801CB70034BBF7 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7BD195D220801F640034BBF7 /* UserProfileCollectionViewCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		7BD195D120801CCE0034BBF7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7BE7A9D6207FA56900B41014 /* OkCupidAPIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		7BE7A9AA207EEF3200B41014 = {
 			isa = PBXGroup;
 			children = (
@@ -115,10 +141,11 @@
 		7BE7A9B5207EEF3200B41014 /* CodeSample */ = {
 			isa = PBXGroup;
 			children = (
+				7BD195D120801CCE0034BBF7 /* Networking */,
+				7BD195D020801CB70034BBF7 /* Custom Cells */,
+				7BD195CF20801C3A0034BBF7 /* Controller */,
 				7BD195CE208014600034BBF7 /* Model */,
 				7BE7A9B6207EEF3200B41014 /* AppDelegate.swift */,
-				7BE7A9B8207EEF3200B41014 /* ProfileMatchesViewController.swift */,
-				7BE7A9D6207FA56900B41014 /* OkCupidAPIClient.swift */,
 				7BE7A9D8207FA59000B41014 /* OkCupidAPIClientError.swift */,
 				7BE7A9DA207FA5B900B41014 /* OkCupidAPIClientResponse.swift */,
 				7BE7A9BA207EEF3200B41014 /* Main.storyboard */,
@@ -309,9 +336,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BE7A9D9207FA59000B41014 /* OkCupidAPIClientError.swift in Sources */,
-				7BE7A9B9207EEF3200B41014 /* ProfileMatchesViewController.swift in Sources */,
+				7BE7A9B9207EEF3200B41014 /* MatchedProfilesViewController.swift in Sources */,
 				7BE7A9B7207EEF3200B41014 /* AppDelegate.swift in Sources */,
 				7BE7A9D7207FA56900B41014 /* OkCupidAPIClient.swift in Sources */,
+				7BD195D320801F640034BBF7 /* UserProfileCollectionViewCell.swift in Sources */,
 				7BE7A9DD207FBDE600B41014 /* MatchedUserProfile.swift in Sources */,
 				7BE7A9DB207FA5B900B41014 /* OkCupidAPIClientResponse.swift in Sources */,
 			);

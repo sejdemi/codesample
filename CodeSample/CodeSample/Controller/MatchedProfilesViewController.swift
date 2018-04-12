@@ -1,6 +1,6 @@
 import UIKit
 
-class ProfileMatchesViewController: UIViewController {
+class MatchedProfilesViewController: UIViewController {
   
   
   @IBOutlet weak var profileCollectionView: UICollectionView!
@@ -18,17 +18,28 @@ class ProfileMatchesViewController: UIViewController {
 
 // MARK: - UICollectionViewDataSource
 
-//extension ProfileMatchesViewController: UICollectionViewDataSource {
-//
-//
-//}
-//
-//// MARK: - UICollectionViewDelegate
-//
-//extension ProfileMatchesViewController: UICollectionViewDelegate {
-//
-//
-//}
+extension MatchedProfilesViewController: UICollectionViewDataSource {
+  
+  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return profileMatches.count
+  }
+  
+  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "userProfileCell", for: indexPath)
+    
+    return cell
+  }
+  
+  
+
+}
+
+// MARK: - UICollectionViewDelegate
+
+extension MatchedProfilesViewController: UICollectionViewDelegate {
+
+
+}
 
 //// MARK: - UITableViewDataSource
 //extension MyViewController: UITableViewDataSource {
