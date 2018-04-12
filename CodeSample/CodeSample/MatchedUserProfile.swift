@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MatchedUserProfile {
+struct MatchedUserProfile {
   
   var userID: String
   var matchPercentage: Double

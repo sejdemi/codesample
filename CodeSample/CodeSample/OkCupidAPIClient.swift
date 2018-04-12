@@ -11,8 +11,10 @@ import Alamofire
 final class OkCupidAPIClient {
   
   //created as a final class because no one else should be subclassing this
-  static func getProfileMatches(for completion: @escaping (OkCupidAPIClientResponse) -> ())  {
-  
+  static func getProfileMatches(for completion: @escaping (OkCupidAPIClientResponse, [MatchedUserProfile]) -> ())  {
+    
+    var matchedUserProfiles: [MatchedUserProfile] = []
+    
     let url = "https://www.okcupid.com/matchSample.json"
     
     Alamofire.request(url, method: .get).responseJSON { (response) in
@@ -21,16 +23,19 @@ final class OkCupidAPIClient {
       if let responseJSON = json["data"] as? [[String: Any]] {
         
         for matchedUserProfile in responseJSON {
-          let userProfile = MatchedUserProfile(dictionary: matchedUserProfile)
-             print(userProfile?.age)
+          if let userProfile = MatchedUserProfile(dictionary: matchedUserProfile){
+            print(userProfile.state)
+            matchedUserProfiles.append(userProfile)
+            print("The count is \(matchedUserProfiles.count)")
+          }
         }
-      
-        completion(.success())
+        
+        completion(.success(), matchedUserProfiles)
         
       } else {
-        completion(.failure(.nodata))
+        completion(.failure(.nodata), matchedUserProfiles)
       }
     }
-}
-
+  }
+  
 }
