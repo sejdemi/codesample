@@ -11,12 +11,15 @@ class MatchedProfilesViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     //capture list is unowned because these values will never become nil
-    OkCupidAPIClient.getProfileMatches { [unowned self] (clientResponse, matchedUserProfiles) in
+    OkCupidAPIClient.fetchAllMatchedUsers(completion: { [unowned self] (clientResponse, matchedUserProfiles) in
       self.profileMatches = matchedUserProfiles
+      
       DispatchQueue.main.async {
         self.profileCollectionView.reloadData()
       }
-    }
+      
+    })
+    
   }
 }
 

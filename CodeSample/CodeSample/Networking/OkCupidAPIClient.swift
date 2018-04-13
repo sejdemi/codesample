@@ -9,7 +9,7 @@ typealias JSON = [String : Any]
 final class OkCupidAPIClient {
   
   //created as a final class because no one else should be subclassing this
-  static func getProfileMatches(for completion: @escaping (OkCupidAPIClientResponse, [MatchedUserProfile]) -> ())  {
+  static func fetchAllMatchedUsers(completion: @escaping (OkCupidAPIClientResponse, [MatchedUserProfile]) -> ())  {
     //should this exist here
     var matchedUserProfiles: [MatchedUserProfile] = []
     let url = "https://www.okcupid.com/matchSample.json"
