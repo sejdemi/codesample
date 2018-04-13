@@ -7,6 +7,7 @@ class MatchedProfilesViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.navigationController?.navigationBar.barTintColor = UIColor.yellow
     OkCupidAPIClient.fetchAllMatchedUsers(completion: { [unowned self] (clientResponse, matchedUserProfiles) in
       self.profileMatches = matchedUserProfiles
       DispatchQueue.main.async {
@@ -36,4 +37,6 @@ extension MatchedProfilesViewController: UICollectionViewDataSource {
     cell.animate()
     return cell
   }
+  
+  
 }
