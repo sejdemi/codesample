@@ -1,7 +1,6 @@
 import Foundation
 
 struct MatchedUserProfile {
-  
   let username: String
   let matchPercentage: Double
   let state: String
@@ -12,7 +11,6 @@ struct MatchedUserProfile {
   
   //initializing a dictionary object of type [String : Any] to be able to capture the JSON values
    init?(dictionary: JSON) {
-    
     guard let username = dictionary["username"] as? String,
     let matchPercentage = dictionary["match"] as? Double,
     let state = dictionary["state_code"] as? String,

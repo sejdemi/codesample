@@ -4,13 +4,11 @@ import Alamofire
 //violation of single responsibility principles,
 
 //define typeAlias
-typealias JSON = [String : Any]
+typealias JSON = [String: Any]
 
 final class OkCupidAPIClient {
-  
   //created as a final class because no one else should be subclassing this
   static func fetchAllMatchedUsers(completion: @escaping (OkCupidAPIClientResponse, [MatchedUserProfile]) -> ())  {
-    //should this exist here
     var matchedUserProfiles: [MatchedUserProfile] = []
     let url = "https://www.okcupid.com/matchSample.json"
     Alamofire.request(url, method: .get).responseJSON { (response) in
@@ -30,5 +28,5 @@ final class OkCupidAPIClient {
       }
     }
   }
-  
+
 }

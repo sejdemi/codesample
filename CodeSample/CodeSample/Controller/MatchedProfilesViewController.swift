@@ -2,29 +2,21 @@ import UIKit
 import Kingfisher
 
 class MatchedProfilesViewController: UIViewController {
-  
-  
   @IBOutlet weak var profileCollectionView: UICollectionView!
-  
   var profileMatches: [MatchedUserProfile] = []
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    //capture list is unowned because these values will never become nil
     OkCupidAPIClient.fetchAllMatchedUsers(completion: { [unowned self] (clientResponse, matchedUserProfiles) in
       self.profileMatches = matchedUserProfiles
-      
       DispatchQueue.main.async {
         self.profileCollectionView.reloadData()
       }
-      
     })
-    
   }
 }
 
 // MARK: - UICollectionViewDataSource
-
 extension MatchedProfilesViewController: UICollectionViewDataSource {
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -41,24 +33,7 @@ extension MatchedProfilesViewController: UICollectionViewDataSource {
     cell.userCityLabel.text = user.city
     cell.userNameLabel.text = user.username
     cell.userMatchPercentageLabel.text = String(user.matchPercentage)
-    
-    let finalFrame: CGRect = cell.frame
-    cell.frame = CGRect(x: finalFrame.origin.x - 1000, y: -500, width: 0, height: 0)
-    UIView.animate(withDuration: 1, animations: {
-      cell.frame = finalFrame
-    })
+    cell.animate()
     return cell
   }
-  
-  
-  
 }
-
-// MARK: - UICollectionViewDelegate
-
-extension MatchedProfilesViewController: UICollectionViewDelegate {
-  
-  
-}
-
-
