@@ -14,6 +14,6 @@ class UserProfileCollectionViewCell: UICollectionViewCell {
       self.frame = finalFrame
     })
   }
-  
+    
 }
 
