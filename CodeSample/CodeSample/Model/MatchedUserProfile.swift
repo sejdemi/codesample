@@ -18,7 +18,8 @@ struct MatchedUserProfile {
     let state = dictionary["state_code"] as? String,
     let age = dictionary["age"] as? Int,
     let photos = dictionary["photo"] as? JSON,
-    let photoThumbnail = photos["base_path"] as? String,
+    let photosFullPaths = photos["full_paths"] as? JSON,
+    let photoThumbnail = photosFullPaths["large"] as? String,
     let city = dictionary["city_name"] as? String,
     let isOnline = dictionary["is_online"] as? Int else {return nil}
     

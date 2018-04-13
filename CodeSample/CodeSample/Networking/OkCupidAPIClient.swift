@@ -21,6 +21,7 @@ final class OkCupidAPIClient {
         for matchedUserProfile in responseJSON {
           if let userProfile = MatchedUserProfile(dictionary: matchedUserProfile){
             matchedUserProfiles.append(userProfile)
+            print(userProfile.photoThumbnail)
           }
         }
         completion(.success(), matchedUserProfiles)
