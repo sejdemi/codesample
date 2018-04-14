@@ -9,12 +9,14 @@ class MatchedProfilesViewController: UIViewController {
     super.viewDidLoad()
 
     OkCupidAPIClient.fetchAllMatchedUsers(completion: { [unowned self] (clientResponse, matchedUserProfiles) in
+      guard let matchedUserProfiles = matchedUserProfiles else { return }
       self.profileMatches = matchedUserProfiles
       DispatchQueue.main.async {
         self.profileCollectionView.reloadData()
       }
     })
   }
+  
 }
 
 // MARK: - UICollectionViewDataSource
@@ -27,16 +29,9 @@ extension MatchedProfilesViewController: UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "userProfileCell", for: indexPath) as! UserProfileCollectionViewCell
     let user = profileMatches[indexPath.item]
-    if let url = URL(string: user.photoThumbnail) {
-      cell.userProfileImageView.kf.setImage(with: url, options: [.transition(.fade(0.2))])
-    }
-    cell.userAgeLabel.text = String(user.age)
-    cell.userCityLabel.text = user.city
-    cell.userNameLabel.text = user.username
-    cell.userMatchPercentageLabel.text = String(user.matchPercentage)
+    cell.setUpCell(with: user)
     cell.animate()
     return cell
   }
-  
   
 }

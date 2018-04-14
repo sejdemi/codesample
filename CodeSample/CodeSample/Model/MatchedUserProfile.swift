@@ -2,14 +2,13 @@ import Foundation
 
 struct MatchedUserProfile {
   let username: String
-  let matchPercentage: Double
+  let matchPercentage: Double //rethink type
   let state: String
   let age: Int
   let photoThumbnail: String
   let city: String
   let isOnline: Int
   
-  //initializing a dictionary object of type [String : Any] to be able to capture the JSON values
    init?(dictionary: JSON) {
     guard let username = dictionary["username"] as? String,
     let matchPercentage = dictionary["match"] as? Double,
@@ -19,7 +18,9 @@ struct MatchedUserProfile {
     let photosFullPaths = photos["full_paths"] as? JSON,
     let photoThumbnail = photosFullPaths["large"] as? String,
     let city = dictionary["city_name"] as? String,
-    let isOnline = dictionary["is_online"] as? Int else {return nil}
+    let isOnline = dictionary["is_online"] as? Int else {
+      return nil
+    }
     
     self.username = username
     self.matchPercentage = matchPercentage
@@ -29,6 +30,5 @@ struct MatchedUserProfile {
     self.city = city
     self.isOnline = isOnline
   }
-  
   
 }
