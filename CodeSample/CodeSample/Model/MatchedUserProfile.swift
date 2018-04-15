@@ -2,7 +2,7 @@ import Foundation
 
 struct MatchedUserProfile {
   let username: String
-  let matchPercentage: Double
+  let matchPercentage: Int
   let state: String
   let age: Int
   let photoThumbnail: String
@@ -11,7 +11,7 @@ struct MatchedUserProfile {
   
    init?(dictionary: JSON) {
     guard let username = dictionary["username"] as? String,
-    let matchPercentage = dictionary["match"] as? Double,
+    let matchPercentage = dictionary["match"] as? Int,
     let state = dictionary["state_code"] as? String,
     let age = dictionary["age"] as? Int,
     let photos = dictionary["photo"] as? JSON,
