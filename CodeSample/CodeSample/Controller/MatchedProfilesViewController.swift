@@ -8,11 +8,12 @@ class MatchedProfilesViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    OkCupidAPIClient.fetchAllMatchedUsers(completion: { [unowned self] (clientResponse, matchedUserProfiles) in
+    OkCupidAPIClient.fetchAllMatchedUsers(completion: { [weak self] (clientResponse, matchedUserProfiles) in
       guard let matchedUserProfiles = matchedUserProfiles else { return }
-      self.profileMatches = matchedUserProfiles
+      self?.profileMatches = matchedUserProfiles
       DispatchQueue.main.async {
-        self.profileCollectionView.reloadData()
+        self?.profileCollectionView.reloadData()
+        print(self?.profileMatches)
       }
     })
   }

@@ -1,7 +1,8 @@
 import XCTest
 
 class OkCupidAPIClientTests: XCTestCase {
-  let json: [String: Any] = [:]
+  typealias JSON = [String: Any]
+  let json: JSON = [:]
   
   override func setUp() {
     super.setUp()
@@ -13,12 +14,12 @@ class OkCupidAPIClientTests: XCTestCase {
     super.tearDown()
   }
   
-  func getJSON()-> [String: Any] {
+  func getJSON()-> JSON {
     var jsonResult: [String: Any] = [:]
     if let path = Bundle.main.path(forResource: "Sample", ofType: "json") {
       do {
         let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-        if let json = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as? [String: Any] {
+        if let json = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as? JSON {
         jsonResult = json
         }
       } catch {
