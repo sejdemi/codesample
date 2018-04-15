@@ -2,7 +2,7 @@ import Foundation
 
 struct MatchedUserProfile {
   let username: String
-  let matchPercentage: Double //rethink type
+  let matchPercentage: Double
   let state: String
   let age: Int
   let photoThumbnail: String
@@ -19,11 +19,11 @@ struct MatchedUserProfile {
     let photoThumbnail = photosFullPaths["large"] as? String,
     let city = dictionary["city_name"] as? String,
     let isOnline = dictionary["is_online"] as? Int else {
-      return nil
+    return nil
     }
     
     self.username = username
-    self.matchPercentage = matchPercentage
+    self.matchPercentage = matchPercentage/100
     self.state = state
     self.age = age
     self.photoThumbnail = photoThumbnail

@@ -1,4 +1,6 @@
 import XCTest
+@testable import CodeSample
+//create malformed json sample
 
 class OkCupidAPIClientTests: XCTestCase {
   typealias JSON = [String: Any]
@@ -6,27 +8,45 @@ class OkCupidAPIClientTests: XCTestCase {
   
   override func setUp() {
     super.setUp()
-    // Put setup code here. This method is called before the invocation of each test method in the class.
   }
   
   override func tearDown() {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     super.tearDown()
   }
   
-  func getJSON()-> JSON {
-    var jsonResult: [String: Any] = [:]
-    if let path = Bundle.main.path(forResource: "Sample", ofType: "json") {
-      do {
-        let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-        if let json = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as? JSON {
-        jsonResult = json
-        }
-      } catch {
-        print("Could not get JSON")
-      }
+  func loadJSONFromFile() -> JSON? {
+    guard let path = Bundle.main.path(forResource: "Sample", ofType: "json") else {
+      return nil
     }
-    return jsonResult
+    guard let data: Data = NSData(contentsOfFile: path) as Data? else {
+      return nil
+    }
+    do {
+      let object = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+      guard let dictionary = object as? JSON else {
+        return nil
+      }
+      return dictionary
+    } catch  {
+      print("Not parsed")
+    }
+    return nil
+  }
+  
+  func testJSONPArsing() {
+    guard let json = loadJSONFromFile() else {
+      return
+    }
+    let matchedUserProfile = OkCupidAPIClient.parseUserJSON(with: json)
+    XCTAssertEqual(matchedUserProfile.count, 18)
+  }
+  
+  func testUserName() {
+    guard let json = loadJSONFromFile() else {
+      return
+    }
+    let matchedUserProfile = OkCupidAPIClient.parseUserJSON(with: json)
+    XCTAssertEqual(matchedUserProfile[0].username, "bklyn2356")
   }
   
   func testExample() {

@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1F1FB01E31993FFF8309FD92 /* Pods_CodeSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F824A9AEFDAEBFACCF688B5 /* Pods_CodeSample.framework */; };
+		7B8782412084073F00E314B7 /* Sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B8782402084073F00E314B7 /* Sample.json */; };
+		7B8782422084083C00E314B7 /* Sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B8782402084073F00E314B7 /* Sample.json */; };
 		7BD195D320801F640034BBF7 /* UserProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD195D220801F640034BBF7 /* UserProfileCollectionViewCell.swift */; };
 		7BD509682082B5A300F06A6F /* OkCupidAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD509672082B5A300F06A6F /* OkCupidAPIClientTests.swift */; };
-		7BD5096A2082BA5200F06A6F /* Sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 7BD509692082BA5200F06A6F /* Sample.json */; };
 		7BE7A9B7207EEF3200B41014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9B6207EEF3200B41014 /* AppDelegate.swift */; };
 		7BE7A9B9207EEF3200B41014 /* MatchedProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9B8207EEF3200B41014 /* MatchedProfilesViewController.swift */; };
 		7BE7A9BC207EEF3200B41014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE7A9BA207EEF3200B41014 /* Main.storyboard */; };
@@ -40,9 +41,9 @@
 		3F824A9AEFDAEBFACCF688B5 /* Pods_CodeSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC2179F79EE9FEE57D83704 /* Pods_CodeSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5976F21E772BE28B3929CFBB /* Pods-CodeSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeSample/Pods-CodeSample.debug.xcconfig"; sourceTree = "<group>"; };
+		7B8782402084073F00E314B7 /* Sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sample.json; sourceTree = "<group>"; };
 		7BD195D220801F640034BBF7 /* UserProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		7BD509672082B5A300F06A6F /* OkCupidAPIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkCupidAPIClientTests.swift; sourceTree = "<group>"; };
-		7BD509692082BA5200F06A6F /* Sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sample.json; sourceTree = "<group>"; };
 		7BE7A9B3207EEF3200B41014 /* CodeSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE7A9B6207EEF3200B41014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BE7A9B8207EEF3200B41014 /* MatchedProfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedProfilesViewController.swift; sourceTree = "<group>"; };
@@ -166,7 +167,7 @@
 				7BE7A9CB207EEF3400B41014 /* CodeSampleTests.swift */,
 				7BE7A9CD207EEF3400B41014 /* Info.plist */,
 				7BD509672082B5A300F06A6F /* OkCupidAPIClientTests.swift */,
-				7BD509692082BA5200F06A6F /* Sample.json */,
+				7B8782402084073F00E314B7 /* Sample.json */,
 			);
 			path = CodeSampleTests;
 			sourceTree = "<group>";
@@ -266,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BE7A9C1207EEF3400B41014 /* LaunchScreen.storyboard in Resources */,
+				7B8782422084083C00E314B7 /* Sample.json in Resources */,
 				7BE7A9BE207EEF3400B41014 /* Assets.xcassets in Resources */,
 				7BE7A9BC207EEF3200B41014 /* Main.storyboard in Resources */,
 			);
@@ -275,7 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BD5096A2082BA5200F06A6F /* Sample.json in Resources */,
+				7B8782412084073F00E314B7 /* Sample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

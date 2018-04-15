@@ -5,13 +5,13 @@ typealias JSON = [String: Any]
 
 final class OkCupidAPIClient {
   
-  static func fetchAllMatchedUsers(completion: @escaping (OkCupidAPIClientResponse, [MatchedUserProfile]?) -> ()) {
+  static func fetchAllMatchedUsers(completion: @escaping (OkCupidAPIClientResponse, [MatchedUserProfile]?)-> ()) {
     let url = "https://www.okcupid.com/matchSample.json"
     Alamofire.request(url, method: .get).responseJSON { (response) in
       if let json = response.result.value as? JSON  {
         let matchedUserProfiles = parseUserJSON(with: json)
         completion(.success(), matchedUserProfiles)
-      } else { //look at spacing here for brackets
+      } else {
         completion(.failure(.nodata), nil)
       }
     }
