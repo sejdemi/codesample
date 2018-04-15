@@ -45,7 +45,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTb-ON-rIX">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age/City/State" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTb-ON-rIX">
                                                     <rect key="frame" x="23" y="237" width="119" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="119" id="IBQ-l2-gly"/>
@@ -80,7 +80,7 @@
                                         </constraints>
                                         <size key="customSize" width="165" height="286.5"/>
                                         <connections>
-                                            <outlet property="userAgeLabel" destination="pTb-ON-rIX" id="K3z-7b-3ZD"/>
+                                            <outlet property="userAgeCityStateLabel" destination="pTb-ON-rIX" id="jZ6-dw-UMg"/>
                                             <outlet property="userMatchPercentageLabel" destination="EkH-24-oAF" id="5Zj-pK-JAa"/>
                                             <outlet property="userNameLabel" destination="DHb-dg-oz8" id="k8b-av-frr"/>
                                             <outlet property="userProfileImageView" destination="LZX-0m-295" id="dbx-UV-88A"/>

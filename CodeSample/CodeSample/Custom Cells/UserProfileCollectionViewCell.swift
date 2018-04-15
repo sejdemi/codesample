@@ -4,14 +4,14 @@ import Kingfisher
 class UserProfileCollectionViewCell: UICollectionViewCell {
   @IBOutlet weak var userProfileImageView: UIImageView!
   @IBOutlet weak var userNameLabel: UILabel!
-  @IBOutlet weak var userAgeLabel: UILabel!
+  @IBOutlet weak var userAgeCityStateLabel: UILabel!
   @IBOutlet weak var userMatchPercentageLabel: UILabel!
   
   func setUpCell(with user: MatchedUserProfile) {
     if let url = URL(string: user.photoThumbnail) {
       self.userProfileImageView.kf.setImage(with: url, options: [.transition(.fade(0.2))])
     }
-    self.userAgeLabel.text = "\(user.age) ∙ \(user.city), \(user.state)"
+    self.userAgeCityStateLabel.text = "\(user.age) ∙ \(user.city), \(user.state)"
     self.userNameLabel.text = user.username
     self.userMatchPercentageLabel.text = "\(user.matchPercentage)% Match"
   }
