@@ -60,6 +60,10 @@
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cup-A0-TPa">
                                                     <rect key="frame" x="15" y="15" width="15" height="15"/>
                                                     <color key="backgroundColor" red="0.30196078431372547" green="0.90196078431372551" blue="0.51764705882352946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="3Kw-2o-Rdb"/>
+                                                        <constraint firstAttribute="width" constant="15" id="qEw-vg-H25"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                         </view>
@@ -68,15 +72,12 @@
                                             <constraint firstItem="pTb-ON-rIX" firstAttribute="width" secondItem="hxf-gv-CTQ" secondAttribute="width" multiplier="10:10" id="2r6-Vz-bX0"/>
                                             <constraint firstItem="pTb-ON-rIX" firstAttribute="centerX" secondItem="hxf-gv-CTQ" secondAttribute="centerX" id="3ZM-UX-vtk"/>
                                             <constraint firstItem="DHb-dg-oz8" firstAttribute="centerX" secondItem="hxf-gv-CTQ" secondAttribute="centerX" id="5il-9y-MV2"/>
-                                            <constraint firstItem="Cup-A0-TPa" firstAttribute="height" secondItem="hxf-gv-CTQ" secondAttribute="height" multiplier="15:286.5" id="6Fe-Hm-LAB"/>
                                             <constraint firstItem="LZX-0m-295" firstAttribute="leading" secondItem="hxf-gv-CTQ" secondAttribute="leading" id="9Y7-1E-0Sc"/>
                                             <constraint firstItem="LZX-0m-295" firstAttribute="height" secondItem="hxf-gv-CTQ" secondAttribute="height" multiplier="193: 286.5" id="A4r-zv-WAd"/>
-                                            <constraint firstItem="LZX-0m-295" firstAttribute="top" secondItem="Cup-A0-TPa" secondAttribute="bottom" constant="-30" id="AF0-0w-L1U"/>
                                             <constraint firstItem="DHb-dg-oz8" firstAttribute="height" secondItem="hxf-gv-CTQ" secondAttribute="height" multiplier="18:265.5" id="FZ6-2W-FNJ"/>
                                             <constraint firstAttribute="trailing" secondItem="LZX-0m-295" secondAttribute="trailing" id="OjQ-Pc-SiI"/>
+                                            <constraint firstItem="LZX-0m-295" firstAttribute="leading" secondItem="Cup-A0-TPa" secondAttribute="trailing" constant="-30" id="R3G-Du-5M6"/>
                                             <constraint firstItem="EkH-24-oAF" firstAttribute="top" secondItem="pTb-ON-rIX" secondAttribute="bottom" constant="10" id="T4G-0q-5aS"/>
-                                            <constraint firstItem="LZX-0m-295" firstAttribute="leading" secondItem="Cup-A0-TPa" secondAttribute="trailing" constant="-30" id="WMd-ok-kKh"/>
-                                            <constraint firstItem="Cup-A0-TPa" firstAttribute="width" secondItem="hxf-gv-CTQ" secondAttribute="width" multiplier="15:165" id="ad2-eM-caU"/>
                                             <constraint firstItem="EkH-24-oAF" firstAttribute="width" secondItem="hxf-gv-CTQ" secondAttribute="width" multiplier="9:10" id="bFI-6p-e5b"/>
                                             <constraint firstItem="DHb-dg-oz8" firstAttribute="top" secondItem="LZX-0m-295" secondAttribute="bottom" constant="13" id="e9I-HB-5Iy"/>
                                             <constraint firstItem="pTb-ON-rIX" firstAttribute="height" secondItem="hxf-gv-CTQ" secondAttribute="height" multiplier="14.5:265.5" id="jw7-oo-EzL"/>
@@ -85,6 +86,7 @@
                                             <constraint firstItem="pTb-ON-rIX" firstAttribute="top" secondItem="DHb-dg-oz8" secondAttribute="bottom" constant="6" id="s6W-s4-0pP"/>
                                             <constraint firstItem="EkH-24-oAF" firstAttribute="height" secondItem="hxf-gv-CTQ" secondAttribute="height" multiplier="18:265.5" id="vOh-nL-eMF"/>
                                             <constraint firstItem="DHb-dg-oz8" firstAttribute="width" secondItem="hxf-gv-CTQ" secondAttribute="width" multiplier="9:10" id="vYI-aR-1h0"/>
+                                            <constraint firstItem="LZX-0m-295" firstAttribute="top" secondItem="Cup-A0-TPa" secondAttribute="bottom" constant="-30" id="whi-Fj-vSP"/>
                                         </constraints>
                                         <size key="customSize" width="165" height="286.5"/>
                                         <connections>
