@@ -17,13 +17,14 @@ final class OkCupidAPIClient {
     }
   }
   
-  static func parseUserJSON(with json: JSON) -> [MatchedUserProfile] {
+  static func parseUserJSON(with json: JSON) -> [MatchedUserProfile]? {
     var matchedUserProfiles: [MatchedUserProfile] = []
     if let responseJSON = json["data"] as? [JSON] {
       for matchedUserProfile in responseJSON {
-        if let userProfile = MatchedUserProfile(dictionary: matchedUserProfile) {
-          matchedUserProfiles.append(userProfile)
+        guard let userProfile = MatchedUserProfile(dictionary: matchedUserProfile) else {
+          return nil
         }
+        matchedUserProfiles.append(userProfile)
       }
     }
     return matchedUserProfiles

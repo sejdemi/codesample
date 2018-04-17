@@ -17,7 +17,6 @@
 		7BE7A9BC207EEF3200B41014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE7A9BA207EEF3200B41014 /* Main.storyboard */; };
 		7BE7A9BE207EEF3400B41014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BE7A9BD207EEF3400B41014 /* Assets.xcassets */; };
 		7BE7A9C1207EEF3400B41014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE7A9BF207EEF3400B41014 /* LaunchScreen.storyboard */; };
-		7BE7A9CC207EEF3400B41014 /* CodeSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9CB207EEF3400B41014 /* CodeSampleTests.swift */; };
 		7BE7A9D7207FA56900B41014 /* OkCupidAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9D6207FA56900B41014 /* OkCupidAPIClient.swift */; };
 		7BE7A9D9207FA59000B41014 /* OkCupidAPIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9D8207FA59000B41014 /* OkCupidAPIClientError.swift */; };
 		7BE7A9DB207FA5B900B41014 /* OkCupidAPIClientResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7A9DA207FA5B900B41014 /* OkCupidAPIClientResponse.swift */; };
@@ -52,7 +51,6 @@
 		7BE7A9C0207EEF3400B41014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BE7A9C2207EEF3400B41014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BE7A9C7207EEF3400B41014 /* CodeSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7BE7A9CB207EEF3400B41014 /* CodeSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSampleTests.swift; sourceTree = "<group>"; };
 		7BE7A9CD207EEF3400B41014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BE7A9D6207FA56900B41014 /* OkCupidAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkCupidAPIClient.swift; sourceTree = "<group>"; };
 		7BE7A9D8207FA59000B41014 /* OkCupidAPIClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkCupidAPIClientError.swift; sourceTree = "<group>"; };
@@ -89,6 +87,24 @@
 				07C22CA6A9AD322A3ED855F3 /* Pods-CodeSample.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B87824420858A7E00E314B7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7BE7A9BA207EEF3200B41014 /* Main.storyboard */,
+				7BE7A9BF207EEF3400B41014 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7B87824520858B6B00E314B7 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				7BE7A9DA207FA5B900B41014 /* OkCupidAPIClientResponse.swift */,
+				7BE7A9D8207FA59000B41014 /* OkCupidAPIClientError.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		7BD195CE208014600034BBF7 /* Model */ = {
@@ -151,11 +167,9 @@
 				7BD195CF20801C3A0034BBF7 /* Controller */,
 				7BD195CE208014600034BBF7 /* Model */,
 				7BE7A9B6207EEF3200B41014 /* AppDelegate.swift */,
-				7BE7A9D8207FA59000B41014 /* OkCupidAPIClientError.swift */,
-				7BE7A9DA207FA5B900B41014 /* OkCupidAPIClientResponse.swift */,
-				7BE7A9BA207EEF3200B41014 /* Main.storyboard */,
+				7B87824520858B6B00E314B7 /* Enums */,
+				7B87824420858A7E00E314B7 /* Storyboards */,
 				7BE7A9BD207EEF3400B41014 /* Assets.xcassets */,
-				7BE7A9BF207EEF3400B41014 /* LaunchScreen.storyboard */,
 				7BE7A9C2207EEF3400B41014 /* Info.plist */,
 			);
 			path = CodeSample;
@@ -164,7 +178,6 @@
 		7BE7A9CA207EEF3400B41014 /* CodeSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				7BE7A9CB207EEF3400B41014 /* CodeSampleTests.swift */,
 				7BE7A9CD207EEF3400B41014 /* Info.plist */,
 				7BD509672082B5A300F06A6F /* OkCupidAPIClientTests.swift */,
 				7B8782402084073F00E314B7 /* Sample.json */,
@@ -358,7 +371,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BE7A9CC207EEF3400B41014 /* CodeSampleTests.swift in Sources */,
 				7BD509682082B5A300F06A6F /* OkCupidAPIClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

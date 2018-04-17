@@ -57,6 +57,10 @@
                                                     <color key="textColor" red="0.3843137254901961" green="0.38823529411764707" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cup-A0-TPa">
+                                                    <rect key="frame" x="15" y="15" width="15" height="15"/>
+                                                    <color key="backgroundColor" red="0.30196078431372547" green="0.90196078431372551" blue="0.51764705882352946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -64,11 +68,15 @@
                                             <constraint firstItem="pTb-ON-rIX" firstAttribute="width" secondItem="hxf-gv-CTQ" secondAttribute="width" multiplier="10:10" id="2r6-Vz-bX0"/>
                                             <constraint firstItem="pTb-ON-rIX" firstAttribute="centerX" secondItem="hxf-gv-CTQ" secondAttribute="centerX" id="3ZM-UX-vtk"/>
                                             <constraint firstItem="DHb-dg-oz8" firstAttribute="centerX" secondItem="hxf-gv-CTQ" secondAttribute="centerX" id="5il-9y-MV2"/>
+                                            <constraint firstItem="Cup-A0-TPa" firstAttribute="height" secondItem="hxf-gv-CTQ" secondAttribute="height" multiplier="15:286.5" id="6Fe-Hm-LAB"/>
                                             <constraint firstItem="LZX-0m-295" firstAttribute="leading" secondItem="hxf-gv-CTQ" secondAttribute="leading" id="9Y7-1E-0Sc"/>
                                             <constraint firstItem="LZX-0m-295" firstAttribute="height" secondItem="hxf-gv-CTQ" secondAttribute="height" multiplier="193: 286.5" id="A4r-zv-WAd"/>
+                                            <constraint firstItem="LZX-0m-295" firstAttribute="top" secondItem="Cup-A0-TPa" secondAttribute="bottom" constant="-30" id="AF0-0w-L1U"/>
                                             <constraint firstItem="DHb-dg-oz8" firstAttribute="height" secondItem="hxf-gv-CTQ" secondAttribute="height" multiplier="18:265.5" id="FZ6-2W-FNJ"/>
                                             <constraint firstAttribute="trailing" secondItem="LZX-0m-295" secondAttribute="trailing" id="OjQ-Pc-SiI"/>
                                             <constraint firstItem="EkH-24-oAF" firstAttribute="top" secondItem="pTb-ON-rIX" secondAttribute="bottom" constant="10" id="T4G-0q-5aS"/>
+                                            <constraint firstItem="LZX-0m-295" firstAttribute="leading" secondItem="Cup-A0-TPa" secondAttribute="trailing" constant="-30" id="WMd-ok-kKh"/>
+                                            <constraint firstItem="Cup-A0-TPa" firstAttribute="width" secondItem="hxf-gv-CTQ" secondAttribute="width" multiplier="15:165" id="ad2-eM-caU"/>
                                             <constraint firstItem="EkH-24-oAF" firstAttribute="width" secondItem="hxf-gv-CTQ" secondAttribute="width" multiplier="9:10" id="bFI-6p-e5b"/>
                                             <constraint firstItem="DHb-dg-oz8" firstAttribute="top" secondItem="LZX-0m-295" secondAttribute="bottom" constant="13" id="e9I-HB-5Iy"/>
                                             <constraint firstItem="pTb-ON-rIX" firstAttribute="height" secondItem="hxf-gv-CTQ" secondAttribute="height" multiplier="14.5:265.5" id="jw7-oo-EzL"/>
@@ -83,6 +91,7 @@
                                             <outlet property="userAgeCityStateLabel" destination="pTb-ON-rIX" id="jZ6-dw-UMg"/>
                                             <outlet property="userMatchPercentageLabel" destination="EkH-24-oAF" id="5Zj-pK-JAa"/>
                                             <outlet property="userNameLabel" destination="DHb-dg-oz8" id="k8b-av-frr"/>
+                                            <outlet property="userOnlineIndicatorView" destination="Cup-A0-TPa" id="u1r-yy-Ryy"/>
                                             <outlet property="userProfileImageView" destination="LZX-0m-295" id="dbx-UV-88A"/>
                                         </connections>
                                     </collectionViewCell>

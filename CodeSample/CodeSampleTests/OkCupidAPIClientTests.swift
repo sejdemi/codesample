@@ -1,6 +1,5 @@
 import XCTest
 @testable import CodeSample
-//create malformed json sample
 
 class OkCupidAPIClientTests: XCTestCase {
   typealias JSON = [String: Any]
@@ -49,17 +48,28 @@ class OkCupidAPIClientTests: XCTestCase {
     XCTAssertEqual(matchedUserProfile[0].username, "bklyn2356")
   }
   
-  func testExample() {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-  }
-  
-  func testPerformanceExample() {
-    // This is an example of a performance test case.
-    self.measure {
-      // Put the code you want to measure the time of here.
+  func testIfUserOnline() {
+    guard let json = loadJSONFromFile() else {
+      return
     }
+    let matchedUserProfile = OkCupidAPIClient.parseUserJSON(with: json)
+    XCTAssertEqual(matchedUserProfile[1].isOnline, 0)
   }
   
+  func testStateName() {
+    guard let json = loadJSONFromFile() else {
+      return
+    }
+    let matchedUserProfile = OkCupidAPIClient.parseUserJSON(with: json)
+    XCTAssertEqual(matchedUserProfile[2].state, "NY")
+  }
+  
+  func testCityName() {
+    guard let json = loadJSONFromFile() else {
+      return
+    }
+    let matchedUserProfile = OkCupidAPIClient.parseUserJSON(with: json)
+    XCTAssertEqual(matchedUserProfile[3].city, "Astoria")
+  }
   
 }

@@ -4,10 +4,10 @@ import Kingfisher
 class MatchedProfilesViewController: UIViewController {
   @IBOutlet weak var profileCollectionView: UICollectionView!
   var profileMatches: [MatchedUserProfile] = []
-  public var screenWidth: CGFloat {
+  var screenWidth: CGFloat {
     return UIScreen.main.bounds.width
   }
-  public var screenHeight: CGFloat {
+  var screenHeight: CGFloat {
     return UIScreen.main.bounds.height
   }
   
@@ -35,7 +35,8 @@ extension MatchedProfilesViewController: UICollectionViewDataSource {
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "userProfileCell", for: indexPath) as! UserProfileCollectionViewCell
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "userProfileCell",
+                                                    for: indexPath) as! UserProfileCollectionViewCell
     let user = profileMatches[indexPath.item]
     cell.setUpCell(with: user)
     cell.animate()
@@ -44,22 +45,20 @@ extension MatchedProfilesViewController: UICollectionViewDataSource {
   
 }
 
+// MARK: - UICollectionViewDelegateFlowLayout
 extension MatchedProfilesViewController: UICollectionViewDelegateFlowLayout {
   
   func collectionView(_ collectionView: UICollectionView,
                       layout collectionViewLayout: UICollectionViewLayout,
                       sizeForItemAt indexPath: IndexPath) -> CGSize {
     var cellWidth: CGFloat
-    var cellHeight: CGFloat
+    let cellHeight: CGFloat = screenHeight * 0.429
     if screenWidth < 375 {
        cellWidth = screenWidth * 0.425
-       cellHeight = screenHeight * 0.414
     } else {
        cellWidth = screenWidth * 0.44
-       cellHeight = screenHeight * 0.429
     }
-    let cellSize = CGSize(width: cellWidth, height: cellHeight)
-    return cellSize
+    return CGSize(width: cellWidth, height: cellHeight)
   }
   
   func collectionView(_ collectionView: UICollectionView,
@@ -77,9 +76,5 @@ extension MatchedProfilesViewController: UICollectionViewDelegateFlowLayout {
                         minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
     return 15
   }
-  
-  
-  
-  
-  
+
 }
