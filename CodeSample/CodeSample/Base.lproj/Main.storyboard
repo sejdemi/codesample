@@ -40,20 +40,20 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="165" height="193"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHb-dg-oz8">
-                                                    <rect key="frame" x="9" y="208" width="148.5" height="18"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <rect key="frame" x="9" y="206" width="148.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                     <color key="textColor" red="0.3843137254901961" green="0.38823529411764707" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age/City/State" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTb-ON-rIX">
-                                                    <rect key="frame" x="8.5" y="235" width="148.5" height="14.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <rect key="frame" x="0.5" y="231.5" width="165" height="15.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="0.56470588235294117" green="0.56862745098039214" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MatchPercent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkH-24-oAF">
-                                                    <rect key="frame" x="41" y="255.5" width="82.5" height="15"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <rect key="frame" x="8" y="257" width="148.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                     <color key="textColor" red="0.3843137254901961" green="0.38823529411764707" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -61,19 +61,22 @@
                                         </view>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="pTb-ON-rIX" firstAttribute="width" secondItem="hxf-gv-CTQ" secondAttribute="width" multiplier="9:10" id="2r6-Vz-bX0"/>
+                                            <constraint firstItem="pTb-ON-rIX" firstAttribute="width" secondItem="hxf-gv-CTQ" secondAttribute="width" multiplier="10:10" id="2r6-Vz-bX0"/>
                                             <constraint firstItem="pTb-ON-rIX" firstAttribute="centerX" secondItem="hxf-gv-CTQ" secondAttribute="centerX" id="3ZM-UX-vtk"/>
                                             <constraint firstItem="DHb-dg-oz8" firstAttribute="centerX" secondItem="hxf-gv-CTQ" secondAttribute="centerX" id="5il-9y-MV2"/>
                                             <constraint firstItem="LZX-0m-295" firstAttribute="leading" secondItem="hxf-gv-CTQ" secondAttribute="leading" id="9Y7-1E-0Sc"/>
                                             <constraint firstItem="LZX-0m-295" firstAttribute="height" secondItem="hxf-gv-CTQ" secondAttribute="height" multiplier="193: 286.5" id="A4r-zv-WAd"/>
+                                            <constraint firstItem="DHb-dg-oz8" firstAttribute="height" secondItem="hxf-gv-CTQ" secondAttribute="height" multiplier="18:265.5" id="FZ6-2W-FNJ"/>
                                             <constraint firstAttribute="trailing" secondItem="LZX-0m-295" secondAttribute="trailing" id="OjQ-Pc-SiI"/>
-                                            <constraint firstItem="EkH-24-oAF" firstAttribute="width" secondItem="hxf-gv-CTQ" secondAttribute="width" multiplier="1:2" id="bFI-6p-e5b"/>
-                                            <constraint firstItem="DHb-dg-oz8" firstAttribute="top" secondItem="LZX-0m-295" secondAttribute="bottom" constant="15" id="e9I-HB-5Iy"/>
+                                            <constraint firstItem="EkH-24-oAF" firstAttribute="top" secondItem="pTb-ON-rIX" secondAttribute="bottom" constant="10" id="T4G-0q-5aS"/>
+                                            <constraint firstItem="EkH-24-oAF" firstAttribute="width" secondItem="hxf-gv-CTQ" secondAttribute="width" multiplier="9:10" id="bFI-6p-e5b"/>
+                                            <constraint firstItem="DHb-dg-oz8" firstAttribute="top" secondItem="LZX-0m-295" secondAttribute="bottom" constant="13" id="e9I-HB-5Iy"/>
+                                            <constraint firstItem="pTb-ON-rIX" firstAttribute="height" secondItem="hxf-gv-CTQ" secondAttribute="height" multiplier="14.5:265.5" id="jw7-oo-EzL"/>
                                             <constraint firstItem="LZX-0m-295" firstAttribute="top" secondItem="hxf-gv-CTQ" secondAttribute="top" id="oPn-5c-CIn"/>
                                             <constraint firstItem="EkH-24-oAF" firstAttribute="centerX" secondItem="hxf-gv-CTQ" secondAttribute="centerX" id="qRe-GJ-CcY"/>
-                                            <constraint firstItem="pTb-ON-rIX" firstAttribute="top" secondItem="DHb-dg-oz8" secondAttribute="bottom" constant="9" id="s6W-s4-0pP"/>
+                                            <constraint firstItem="pTb-ON-rIX" firstAttribute="top" secondItem="DHb-dg-oz8" secondAttribute="bottom" constant="6" id="s6W-s4-0pP"/>
+                                            <constraint firstItem="EkH-24-oAF" firstAttribute="height" secondItem="hxf-gv-CTQ" secondAttribute="height" multiplier="18:265.5" id="vOh-nL-eMF"/>
                                             <constraint firstItem="DHb-dg-oz8" firstAttribute="width" secondItem="hxf-gv-CTQ" secondAttribute="width" multiplier="9:10" id="vYI-aR-1h0"/>
-                                            <constraint firstItem="EkH-24-oAF" firstAttribute="top" secondItem="pTb-ON-rIX" secondAttribute="bottom" constant="6" id="wIo-HS-e2U"/>
                                         </constraints>
                                         <size key="customSize" width="165" height="286.5"/>
                                         <connections>
